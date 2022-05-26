@@ -187,6 +187,5 @@ int main(int argc, char *argv[]) {
     auto overall_stop = high_resolution_clock::now();
     auto overall_time = duration_cast<microseconds>(overall_stop - overall_start);
     auto processing_time = duration_cast<microseconds>(processing_stop - processing_start);
-    std::cout <<"finished processing in " << processing_time.count() << " us" << std::endl;
-    std::cout <<"overall run time is " << overall_time.count() << " us" << std::endl;
+    std::cout << processing_time.count() << " " << overall_time.count() <<  std::endl;
 }
